@@ -1,7 +1,36 @@
 {
   "private": true,
+  "workspaces": {
+    "packages": ["packages/*"],
+    "nohoist": []
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "new-version": "lerna version --conventional-commits -m \"chore: publish %s\"",
+    "release": "lerna publish from-package",
+    "commit": "npx git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/config-lerna-scopes": "^8.1.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.1",
+    "lerna": "^3.16.1"
+  },
+  "engines" : {
+    "node" : ">= 10"
   },
   "author": "Gean Carlos <gean.marroquin@gmail.com>",
   "license": "MIT"
