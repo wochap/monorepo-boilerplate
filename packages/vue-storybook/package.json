@@ -1,0 +1,43 @@
+{
+  "name": "monorepo-example-vue-storybook",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/vueStorybook.common.js",
+  "scripts": {
+    "dev": "yarn dev:storybook",
+    "dev:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js --mode development --watch",
+    "dev:storybook": "start-storybook -s ./public -p 6006",
+    "dev:sandbox": "vue-cli-service serve ./src/sandbox.js",
+    "build": "yarn build:lib && yarn build:storybook",
+    "build:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js",
+    "build:storybook": "build-storybook -s ./public",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "commit": "npx git-cz"
+  },
+  "vuePlugins": {
+    "resolveFrom": "../../"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.0",
+    "element-ui": "2.4.11",
+    "normalize.css": "^8.0.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wochap/monorepo-example.git",
+    "directory": "packages/vue-storybook"
+  },
+  "author": "Gean Carlos <gean.marroquin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wochap/monorepo-example/issues"
+  },
+  "homepage": "https://github.com/wochap/monorepo-example/tree/master/packages/vue-storybook#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
