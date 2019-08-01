@@ -1,0 +1,33 @@
+{
+  "name": "monorepo-example-vanilla",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/vanilla.js",
+  "scripts": {
+    "dev": "vue-cli-service build --target lib --name vanilla ./src/main.js --mode development --watch",
+    "build": "vue-cli-service build --target lib --name vanilla ./src/main.js",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "commit": "npx git-cz"
+  },
+  "vuePlugins": {
+    "resolveFrom": "../../"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wochap/monorepo-example.git",
+    "directory": "packages/vanilla"
+  },
+  "author": "Gean Carlos <gean.marroquin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wochap/monorepo-example/issues"
+  },
+  "homepage": "https://github.com/wochap/monorepo-example/tree/master/packages/vanilla#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
