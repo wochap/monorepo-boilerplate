@@ -1,29 +1,29 @@
-const { resolve } = require('path');
+const { resolve } = require('path')
 
 module.exports = async ({ config }) => {
-  config.resolve.alias['@'] = resolve(__dirname, '../src');
+  config.resolve.alias['@'] = resolve(__dirname, '../src')
   config.module.rules.some(rule => {
     if (!rule.use || !rule.use.find) {
-      return;
+      return
     }
-    const sassLoaderRule = rule.use.find(item => item.loader === 'sass-loader');
+    const sassLoaderRule = rule.use.find(item => item.loader === 'sass-loader')
     if (!sassLoaderRule) {
-      return;
+      return
     }
     sassLoaderRule.options = {
       data: `
         @import "~@/styles/_settings.global.scss";
         @import "~@/styles/_tools.global.scss";
       `,
-    };
-    return true;
-  });
+    }
+    return true
+  })
   config.module.rules.some(rule => {
     if (!rule.exclude) {
-      return;
+      return
     }
-    rule.exclude = [/node_modules\/(?!(element-ui|ANOTHER-ONE)).*/];
-    return true;
-  });
-  return config;
-};
+    rule.exclude = [/node_modules\/(?!(element-ui|ANOTHER-ONE)).*/]
+    return true
+  })
+  return config
+}
