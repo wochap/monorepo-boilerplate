@@ -16,7 +16,8 @@
     "new-version": "lerna version --conventional-commits -m \"chore: publish %s\"",
     "release": "lerna publish from-package",
     "commit": "npx git-cz",
-    "lint": "vue-cli-service lint && lerna run lint --stream -- --color"
+    "lint": "vue-cli-service lint && lerna run lint --stream -- --color",
+    "prettier": "npx prettier -c .prettierrc.js --write '**/*.{js,json,vue,scss,css}'"
   },
   "husky": {
     "hooks": {
@@ -25,6 +26,10 @@
     }
   },
   "lint-staged": {
+    "*.{js,json,vue,scss}": [
+      "prettier --write",
+      "git add"
+    ],
     "*.{js,vue}": [
       "vue-cli-service lint",
       "git add",
