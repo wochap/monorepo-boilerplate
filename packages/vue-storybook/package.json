@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/vueStorybook.common.js",
   "scripts": {
-    "dev": "yarn dev:storybook",
+    "dev": "concurrently \"yarn dev:lib\" \"yarn dev:storybook\"",
     "dev:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js --mode development --watch",
     "dev:storybook": "start-storybook -s ./public -p 6006",
     "dev:sandbox": "vue-cli-service serve ./src/sandbox.js",

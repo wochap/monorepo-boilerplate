@@ -1,8 +1,12 @@
 {
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"],
-    "nohoist": ["**/element-ui"]
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/element-ui"
+    ]
   },
   "scripts": {
     "dev": "lerna run dev --stream -- --color",
@@ -62,6 +66,7 @@
     "babel-jest": "^23.6.0",
     "babel-plugin-macros": "^2.6.1",
     "commitizen": "^4.0.3",
+    "concurrently": "^4.1.1",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
