@@ -17,7 +17,7 @@
     "release": "lerna publish from-package",
     "commit": "npx git-cz",
     "lint": "vue-cli-service lint && lerna run lint --stream -- --color",
-    "prettier": "npx prettier -c .prettierrc.js --write '**/*.{js,json,vue,scss,css}'"
+    "prettier": "npx prettier -c .prettierrc.js --write '**/*.{js,json,vue,scss,css,html}'"
   },
   "husky": {
     "hooks": {
@@ -26,7 +26,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,vue,scss}": [
+    "*.{js,json,vue,scss,html}": [
       "prettier --write",
       "git add"
     ],
