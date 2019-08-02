@@ -21,6 +21,8 @@
 -   `yarn dev` - Run "yarn dev" in every package.
 -   `yarn build` - Run "yarn build" in every package.
 -   `yarn test:unit` - Run "yarn test:unit" in every package.
+-   `yarn lint` - Lints and fixes files.
+-   `yarn prettier` - Prettier and fixes files.
 -   `yarn commit` - Commit your changes using [commitizen](https://github.com/commitizen/cz-cli).
 
 ## Releasing
@@ -32,6 +34,10 @@
 
 -   `lerna changed` - Show which packages have changed.
 -   `lerna diff` - Show specifically what files have cause the packages to change.
+
+## Hooks
+
+// TODO:
 
 ## Commit message format
 ```
