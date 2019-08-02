@@ -23,7 +23,8 @@
   "lint-staged": {
     "*.{js,vue}": [
       "vue-cli-service lint",
-      "git add"
+      "git add",
+      "lerna run test:unit --stream -- --bail --findRelatedTests"
     ]
   },
   "config": {
