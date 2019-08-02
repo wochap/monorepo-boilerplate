@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-example-vanilla",
+  "name": "@monorepo-boilerplate/vanilla",
   "version": "0.0.1",
   "description": "",
   "main": "dist/vanilla.js",
@@ -18,15 +18,15 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wochap/monorepo-example.git",
+    "url": "https://github.com/wochap/monorepo-boilerplate.git",
     "directory": "packages/vanilla"
   },
   "author": "Gean Carlos <gean.marroquin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wochap/monorepo-example/issues"
+    "url": "https://github.com/wochap/monorepo-boilerplate/issues"
   },
-  "homepage": "https://github.com/wochap/monorepo-example/tree/master/packages/vanilla#readme",
+  "homepage": "https://github.com/wochap/monorepo-boilerplate/tree/master/packages/vanilla#readme",
   "publishConfig": {
     "access": "public"
   }

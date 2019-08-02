@@ -82,6 +82,5 @@
   "engines": {
     "node": ">= 10"
   },
-  "author": "Gean Carlos <gean.marroquin@gmail.com>",
   "license": "MIT"
 }

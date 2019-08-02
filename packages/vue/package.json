@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-example-vue",
+  "name": "@monorepo-boilerplate/vue",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,23 +12,11 @@
   "vuePlugins": {
     "resolveFrom": "../../"
   },
-  "description": "",
   "dependencies": {
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {},
-  "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wochap/monorepo-example.git",
-    "directory": "packages/vue"
-  },
-  "author": "Gean Carlos <gean.marroquin@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wochap/monorepo-example/issues"
-  },
-  "homepage": "https://github.com/wochap/monorepo-example/tree/master/packages/vue#readme"
+  "license": "MIT"
 }

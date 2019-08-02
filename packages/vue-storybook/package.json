@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-example-vue-storybook",
+  "name": "@monorepo-boilerplate/vue-storybook",
   "version": "0.0.1",
   "description": "",
   "main": "dist/vueStorybook.common.js",
@@ -29,15 +29,15 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wochap/monorepo-example.git",
+    "url": "https://github.com/wochap/monorepo-boilerplate.git",
     "directory": "packages/vue-storybook"
   },
   "author": "Gean Carlos <gean.marroquin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wochap/monorepo-example/issues"
+    "url": "https://github.com/wochap/monorepo-boilerplate/issues"
   },
-  "homepage": "https://github.com/wochap/monorepo-example/tree/master/packages/vue-storybook#readme",
+  "homepage": "https://github.com/wochap/monorepo-boilerplate/tree/master/packages/vue-storybook#readme",
   "publishConfig": {
     "access": "public"
   }
