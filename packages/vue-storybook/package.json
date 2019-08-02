@@ -9,7 +9,7 @@
     "dev:storybook": "start-storybook -s ./public -p 6006",
     "dev:sandbox": "vue-cli-service serve ./src/sandbox.js",
     "build": "yarn build:lib && yarn build:storybook",
-    "build:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js",
+    "build:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js --color",
     "build:storybook": "build-storybook -s ./public",
     "test:unit": "vue-cli-service test:unit --testPathIgnorePatterns storybook.test.js",
     "test:visual": "vue-cli-service test:unit --testPathPattern storybook.test.js",

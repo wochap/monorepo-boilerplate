@@ -5,14 +5,14 @@
     "nohoist": ["**/element-ui"]
   },
   "scripts": {
-    "dev": "lerna run dev --stream",
+    "dev": "lerna run dev --stream -- --color",
     "build": "lerna run build --stream",
-    "storybook": "lerna run storybook --stream",
+    "test:unit": "lerna run test:unit --stream -- --color",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "new-version": "lerna version --conventional-commits -m \"chore: publish %s\"",
     "release": "lerna publish from-package",
     "commit": "npx git-cz",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint && lerna run lint --stream -- --color"
   },
   "husky": {
     "hooks": {
@@ -24,7 +24,7 @@
     "*.{js,vue}": [
       "vue-cli-service lint",
       "git add",
-      "lerna run test:unit --stream -- --bail --findRelatedTests"
+      "lerna run test:unit --stream -- --color --bail --findRelatedTests"
     ]
   },
   "config": {

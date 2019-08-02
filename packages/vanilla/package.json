@@ -5,7 +5,7 @@
   "main": "dist/vanilla.js",
   "scripts": {
     "dev": "vue-cli-service build --target lib --name vanilla ./src/main.js --mode development --watch",
-    "build": "vue-cli-service build --target lib --name vanilla ./src/main.js",
+    "build": "vue-cli-service build --target lib --name vanilla ./src/main.js --color",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "commit": "npx git-cz"
