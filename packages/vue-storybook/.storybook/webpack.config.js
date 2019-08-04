@@ -25,5 +25,18 @@ module.exports = async ({ config }) => {
     rule.exclude = [/node_modules\/(?!(element-ui|ANOTHER-ONE)).*/]
     return true
   })
+  config.module.rules.push({
+    test: /\.stories\.jsx?$/,
+    loaders: [
+      {
+        loader: require.resolve('@storybook/addon-storysource/loader'),
+        options: {
+          prettierConfig: require('../../../.prettierrc.js'),
+          parser: 'flow',
+        },
+      },
+    ],
+    enforce: 'pre',
+  })
   return config
 }
