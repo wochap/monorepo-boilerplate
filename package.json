@@ -68,7 +68,7 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "23.6.0",
     "babel-plugin-macros": "^2.6.1",
     "commitizen": "^4.0.3",
     "concurrently": "^4.1.1",
@@ -84,6 +84,10 @@
     "pretty-quick": "^1.11.1",
     "require-context.macro": "^1.0.4",
     "sass-loader": "^7.1.0",
+    "stylelint": "10.1.0",
+    "stylelint-config-prettier": "5.2.0",
+    "stylelint-config-sass-guidelines": "6.0.0",
+    "stylelint-config-standard": "18.3.0",
     "vue-template-compiler": "^2.6.10"
   },
   "engines": {
