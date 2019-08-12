@@ -1,20 +1,12 @@
+const commonConfig = require('./jest.common.config')
+
 module.exports = {
-  projects: ['<rootDir>/packages/*'],
-  moduleFileExtensions: ['js', 'jsx', 'json', 'vue'],
+  ...commonConfig,
   transform: {
     '^.+\\.vue$': 'vue-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$':
       'jest-transform-stub',
     '^.+\\.jsx?$': 'babel-jest',
   },
-  transformIgnorePatterns: ['/node_modules/(?!(@storybook/.*\\.vue$))'],
-  snapshotSerializers: ['jest-serializer-vue'],
-  testMatch: [
-    '**/*.test.(js|jsx|ts|tsx)|**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)',
-  ],
-  testURL: 'http://localhost/',
-  watchPlugins: [
-    'jest-watch-typeahead/filename',
-    'jest-watch-typeahead/testname',
-  ],
+  projects: ['<rootDir>/packages/*'],
 }

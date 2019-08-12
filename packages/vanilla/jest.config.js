@@ -1,7 +1,8 @@
-const commonConfig = require('../../jest.config')
+const commonConfig = require('../../jest.common.config')
 
-module.exports = Object.assign({}, commonConfig, {
+module.exports = {
+  ...commonConfig,
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
-})
+}
