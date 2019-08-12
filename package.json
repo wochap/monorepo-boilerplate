@@ -16,8 +16,9 @@
     "new-version": "lerna version --conventional-commits -m \"chore: publish %s\"",
     "release": "lerna publish from-package",
     "lint": "vue-cli-service lint && lerna run lint --stream -- --color",
-    "prettier": "npx prettier -c .prettierrc.js --write '**/*.{js,json,vue,scss,css,html}'",
-    "commit": "npx git-cz"
+    "lint:style": "stylelint --fix '**/*.{vue,scss}'",
+    "prettier": "prettier -c .prettierrc.js --write '**/*.{js,json,vue,scss,css,html}'",
+    "commit": "git-cz"
   },
   "husky": {
     "hooks": {
@@ -26,13 +27,26 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,vue,scss,html}": [
-      "pretty-quick --staged"
-    ],
-    "*.{js,vue}": [
+    "*.js": [
       "vue-cli-service lint",
       "git add",
+      "pretty-quick --staged",
       "lerna run test:unit --stream -- --color --bail --findRelatedTests"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "stylelint --fix",
+      "git add",
+      "pretty-quick --staged",
+      "lerna run test:unit --stream -- --color --bail --findRelatedTests"
+    ],
+    "*.scss": [
+      "stylelint --fix",
+      "git add",
+      "pretty-quick --staged"
+    ],
+    "*.{json,html}": [
+      "pretty-quick --staged"
     ]
   },
   "config": {
