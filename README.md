@@ -18,6 +18,7 @@
 
 -   `yarn` - Install dependencies
 -   `yarn bootstrap` - Link local packages together and install remaining package dependencies.
+-   `yarn new` - Generate basic boilerplate for new package.
 -   `yarn dev` - Run "yarn dev" in every package.
 -   `yarn build` - Run "yarn build" in every package.
 -   `yarn test:unit` - Run "yarn test:unit" in every package.
