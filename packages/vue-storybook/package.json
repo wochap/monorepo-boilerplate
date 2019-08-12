@@ -5,11 +5,11 @@
   "main": "dist/vueStorybook.common.js",
   "scripts": {
     "dev": "concurrently \"yarn dev:lib\" \"yarn dev:storybook\"",
-    "dev:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js --mode development --watch",
+    "dev:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js --formats umd-min --mode development --watch",
     "dev:storybook": "start-storybook -s ./public -p 6006",
     "dev:sandbox": "vue-cli-service serve ./src/sandbox.js",
     "build": "yarn build:lib && yarn build:storybook",
-    "build:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js --color",
+    "build:lib": "vue-cli-service build --target lib --name vueStorybook ./src/main.js --formats umd-min --report --color",
     "build:storybook": "build-storybook -s ./public",
     "test:unit": "vue-cli-service test:unit --testPathIgnorePatterns storybook.test.js",
     "test:visual": "vue-cli-service test:unit --testPathPattern storybook.test.js",

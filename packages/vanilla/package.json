@@ -4,8 +4,8 @@
   "description": "",
   "main": "dist/vanilla.js",
   "scripts": {
-    "dev": "vue-cli-service build --target lib --name vanilla ./src/main.js --mode development --watch",
-    "build": "vue-cli-service build --target lib --name vanilla ./src/main.js --color",
+    "dev": "vue-cli-service build --target lib --name vanilla ./src/main.js --formats umd-min --mode development --watch",
+    "build": "vue-cli-service build --target lib --name vanilla ./src/main.js --formats umd-min --report --color",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "commit": "git-cz"
