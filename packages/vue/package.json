@@ -7,7 +7,7 @@
     "build": "vue-cli-service build --color",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "commit": "npx git-cz"
+    "commit": "git-cz"
   },
   "vuePlugins": {
     "resolveFrom": "../../"
