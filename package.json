@@ -14,7 +14,7 @@
     "build": "lerna run build --stream",
     "test:unit": "lerna run test:unit --stream -- --color",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "new-version": "lerna version --conventional-commits --message 'chore: publish'",
+    "new-version": "lerna version --conventional-commits --message 'chore: publish' --include-merged-tags",
     "release": "lerna publish from-package",
     "lint": "vue-cli-service lint && lerna run lint --stream -- --color",
     "lint:style": "stylelint --fix '**/*.{vue,scss}'",
