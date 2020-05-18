@@ -1,0 +1,11 @@
+.storybook/
+dist/*
+!dist/vue-storybook-example.umd.min.js
+public/
+src/
+storybook-static/
+.babelrc.js
+.browserlistrc
+.gitignore
+CHANGELOG.md
+vue.config.js

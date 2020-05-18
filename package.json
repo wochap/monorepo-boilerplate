@@ -6,7 +6,6 @@
     ]
   },
   "scripts": {
-    "new": "hygen package new",
     "dev": "lerna run dev --stream -- --color",
     "build": "lerna run build --stream",
     "test:unit": "lerna run test:unit --stream -- --color",
@@ -14,14 +13,10 @@
     "new-version": "lerna version --conventional-commits --message 'chore: publish' --include-merged-tags",
     "release": "lerna publish from-package",
     "lint": "lerna run lint --stream -- --color",
-    "prettier": "lerna run prettier --stream -- --color",
-    "commit": "git-cz"
+    "prettier": "lerna run prettier --stream -- --color"
   },
   "devDependencies": {
-    "commitizen": "^4.0.3",
-    "hygen": "^4.0.8",
-    "lerna": "^3.21.0",
-    "prettier": "^2.0.5"
+    "lerna": "^3.21.0"
   },
   "license": "MIT"
 }

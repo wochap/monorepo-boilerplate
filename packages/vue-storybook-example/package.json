@@ -1,0 +1,66 @@
+{
+  "name": "@demo-3682/vue-storybook-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/vue-storybook-example.umd.min.js",
+  "scripts": {
+    "dev": "concurrently \"yarn dev:lib\" \"yarn dev:storybook\"",
+    "dev:lib": "vue-cli-service build ./src/main.js --target lib --name vueStorybookExample --filename vue-storybook-example --formats umd-min --mode development --watch",
+    "dev:storybook": "start-storybook -s ./public -p 6006",
+    "dev:sandbox": "vue-cli-service serve ./src/sandbox.js",
+    "build": "yarn build:lib && yarn build:storybook",
+    "build:lib": "vue-cli-service build --target lib ./src/main.js --name vueStorybookExample --filename vue-storybook-example --formats umd-min --report --color",
+    "build:storybook": "build-storybook -s ./public"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@knowbly/postcss-overflow-scrolling-touch": "0.0.1",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-storyshots": "^5.3.18",
+    "@storybook/addon-storyshots-puppeteer": "^5.3.18",
+    "@storybook/addon-storysource": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/vue": "^5.3.18",
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-unit-jest": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/test-utils": "^1.0.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-vue": "^2.0.2",
+    "concurrently": "^4.1.1",
+    "css-loader": "^3.5.3",
+    "node-sass": "^4.14.1",
+    "puppeteer": "^3.1.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wochap/monorepo-boilerplate.git",
+    "directory": "packages/vue-storybook-example"
+  },
+  "author": "Gean Carlos <gean.marroquin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wochap/monorepo-boilerplate/issues"
+  },
+  "homepage": "https://github.com/wochap/monorepo-boilerplate/tree/master/packages/vue-storybook-example#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
