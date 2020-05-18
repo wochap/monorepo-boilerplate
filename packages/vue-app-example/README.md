@@ -1,6 +1,4 @@
-# vue-storybook [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
-
-> UI lib boilerplate, storybook for document/showcase all components and vue-cli for build them.
+# vue-app-example [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 ## Usage
 
@@ -11,4 +9,3 @@
 -   `yarn build` - Build dist and storybook-static folder for production.
 -   `yarn test:e2e` - Run your end-to-end tests.
 -   `yarn lint` - Lints and fixes files.
--   `yarn commit` - Commit your changes using [commitizen](https://github.com/commitizen/cz-cli).

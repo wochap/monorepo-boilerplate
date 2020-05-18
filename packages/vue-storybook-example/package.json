@@ -10,7 +10,8 @@
     "dev:sandbox": "vue-cli-service serve ./src/sandbox.js",
     "build": "yarn build:lib && yarn build:storybook",
     "build:lib": "vue-cli-service build --target lib ./src/main.js --name vueStorybookExample --filename vue-storybook-example --formats umd-min --report --color",
-    "build:storybook": "build-storybook -s ./public"
+    "build:storybook": "build-storybook -s ./public",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
