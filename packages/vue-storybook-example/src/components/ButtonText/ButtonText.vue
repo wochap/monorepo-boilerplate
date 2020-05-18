@@ -6,7 +6,7 @@ export default {
       <button
         class={['ButtonText', context.data.class, context.data.staticClass]}
         style={[context.data.style, context.data.staticStyle]}
-        type="button"
+        type='button'
         {...{
           on: context.listeners,
           attrs: context.data.attrs,

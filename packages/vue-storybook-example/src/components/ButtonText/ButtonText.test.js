@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils'
+import {shallowMount} from '@vue/test-utils'
 import ButtonText from './ButtonText'
 
 describe('ButtonText.vue', () => {

@@ -1,5 +1,4 @@
 import ButtonText from './ButtonText'
-import { withKnobs, text, number, select } from '@storybook/addon-knobs'
 
 export default {
   title: 'UI|ButtonText',

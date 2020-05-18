@@ -1,11 +1,11 @@
 // in case storybook is failing, you can prototype here
 import Vue from 'vue'
-import { Icon } from './main'
+import {Icon} from './main'
 
 const Sandbox = {
   functional: true,
   render() {
-    return <Icon name="tree" />
+    return <Icon name='tree' />
   },
 }
 
