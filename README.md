@@ -35,6 +35,7 @@
 
 -   `lerna changed` - Show which packages have changed.
 -   `lerna diff` - Show specifically what files have cause the packages to change.
+-   `lerna run dev --scope @demo-3682/vue-app-example --stream --color` - Run dev script in @demo-3682/vue-app-example.
 
 ## Hooks
 
