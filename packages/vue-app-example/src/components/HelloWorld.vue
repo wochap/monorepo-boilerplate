@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <ButtonText>Hi</ButtonText>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
@@ -63,8 +64,13 @@
 </template>
 
 <script>
+const {ButtonText} = require('@demo-3682/vue-storybook-example')
+
 export default {
   name: 'HelloWorld',
+  components: {
+    ButtonText,
+  },
   props: {
     msg: String,
   },

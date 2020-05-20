@@ -9,7 +9,7 @@
     "dev:storybook": "start-storybook -s ./public -p 6006",
     "dev:sandbox": "vue-cli-service serve ./src/sandbox.js",
     "build": "yarn build:lib && yarn build:storybook",
-    "build:lib": "vue-cli-service build --target lib ./src/main.js --name vueStorybookExample --filename vue-storybook-example --formats umd-min --report --color",
+    "build:lib": "vue-cli-service build ./src/main.js --target lib --name vueStorybookExample --filename vue-storybook-example --formats umd-min --report --color",
     "build:storybook": "build-storybook -s ./public",
     "lint": "vue-cli-service lint"
   },
